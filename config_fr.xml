@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>exercicedashboard</name>
+    <displayName><![CDATA[Exercice Dashboard]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Affiche des donn&eacute;es m&eacute;t&eacute;o dans le dashboard PrestaShop.]]></description>
+    <author><![CDATA[Nael]]></author>
+    <tab><![CDATA[dashboard]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>
