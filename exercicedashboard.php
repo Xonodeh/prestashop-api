@@ -136,7 +136,7 @@ class Exercicedashboard extends Module
             Media::addJsDef([
                 'ajax_exercise_url' => $this->context->link->getAdminLink('AdminAjaxExercicedashboard')
             ]);
-            $this->context->controller->addJS($this->_path . 'views/js/dashboard.js');
+            $this->context->controller->addJS($this->_path . 'views/dashboard.js');
         }
     }
 
