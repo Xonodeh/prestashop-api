@@ -1,5 +1,5 @@
 # prestashop-api
-# Exercicedashboard
+# Exercicedashboard & Client Matricule Checker
 
 ## Le but du module
 
@@ -40,4 +40,38 @@ Les données sont récupérées via une API publique gratuite.
 - Tester la mise à jour manuelle en cliquant sur le bouton **Mettre à jour maintenant** et vérifier que la donnée est actualisée.  
 - Si la mise à jour automatique est activée, vérifier après 24 heures que les données se sont mises à jour automatiquement.  
 - Tester l’activation et la désactivation du module via la page de configuration.
+
+# Module ClientMatricule
+
+## Description
+
+Ce module permet de vérifier l'authenticité des clients via un champ **matricule** ajouté au formulaire d'inscription, en comparant ce matricule à une liste de matricules valides importée par boutique.
+
+Le module est compatible **multiboutique** : chaque boutique dispose de sa propre liste de matricules valides.
+
+---
+
+## Fonctionnalités
+
+- Ajout d'un champ **matricule** obligatoire dans le formulaire d'inscription client.
+- Upload d'un fichier `.csv` contenant la liste des matricules valides, spécifique à chaque boutique.
+- Validation du matricule saisi lors de l'inscription client en le comparant à la liste importée.
+- Affichage dans le Back Office de la liste des clients avec leur statut de validation (matricule valide ou non) par boutique.
+- Support multiboutique, avec isolation des données par boutique.
+
+---
+
+## Format du fichier CSV attendu
+
+Le fichier CSV doit être un fichier texte avec un encodage UTF-8, contenant une liste des matricules valides, avec ou sans en-tête.
+
+### Format simple recommandé
+
+Chaque ligne contient un matricule valide :
+
+```csv
+12345
+23456
+34567
+45678
 
